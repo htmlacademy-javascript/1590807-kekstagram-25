@@ -16,10 +16,6 @@ getRandomInt(0, 100);
 
 function checkStringLength(userString, maxLength) {
   const userInput = userString.value;
-  if(userInput.length <= maxLength){
-    return true;
-  } else {
-    return false;
-  }
+  return userInput.length <= maxLength;
 }
 checkStringLength(23, 140);
