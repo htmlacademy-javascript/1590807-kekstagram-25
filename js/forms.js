@@ -1,8 +1,9 @@
+import { isEscapeKey } from './util.js';
 const body = document.querySelector('body');
 const uploadFileForm = document.querySelector('#upload-file');
 const imageEditorForm = document.querySelector('.img-upload__overlay');
 const uploadCancelBtn = document.querySelector('#upload-cancel');
-const isEscapeKey = (evt) => evt.key ==='Escape';
+//const isEscapeKey = (evt) => evt.key ==='Escape';
 
 const openLoadForm = () => {
   imageEditorForm.classList.remove('hidden');
@@ -23,7 +24,8 @@ const openLoadForm = () => {
 };
 
 uploadFileForm.addEventListener('change', openLoadForm);
-//const uploadPhoto = () => {uploadFileForm.addEventListener('change', openLoadForm);};
-//export {uploadPhoto};
+
+const uploadPhoto = () => {uploadFileForm.addEventListener('change', openLoadForm);};
+export {uploadPhoto};
 
 
