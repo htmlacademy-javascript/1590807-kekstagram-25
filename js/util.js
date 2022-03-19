@@ -15,14 +15,17 @@ getRandomInt(0, 100);
 //Функция для проверки максимальной длины строки.
 
 function checkStringLength(userString, maxLength) {
-  const userInput = userString.value;
-  return userInput.length <= maxLength;
+  return userString.length <= maxLength;
 }
-checkStringLength(23, 140);
+checkStringLength('Hello', 140);
 
 //Функция выбора рандомного элемента из массива.
 
 const getRandomArrayElement = (elements) => elements [getRandomInt(0, elements.length - 1)];
 
+const isEscapeKey = (evt) => evt.key ==='Escape';
+
+export {isEscapeKey};
 export{getRandomInt};
 export{getRandomArrayElement};
+
