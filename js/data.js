@@ -46,4 +46,4 @@ const createPhotoDescriptions = () => {
   }
   return photoDescriptions;
 };
-export {createPhotoDescriptions};
+//export {createPhotoDescriptions};
